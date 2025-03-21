@@ -1,0 +1,2 @@
+npx eas build (for aab file)
+npx eas build -p android --profile preview (for apk)

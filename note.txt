@@ -1,0 +1,7 @@
+#### asp.net ###
+add-migration initalMigrationToDb
+update-database
+#### asp.net ###
+
+### expo create blank js project ###
+npx create-expo-app YOUR-PROJECT-NAME --template blank
