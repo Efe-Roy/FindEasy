@@ -50,6 +50,7 @@ export default function LoginScreen() {
         Alert.alert('Login successful!', `Hello, ${user.email}`);
       })
       .catch((error) => {
+        console.log("ll", error.message);
         Alert.alert('Login failed!', error.message);
       });
   };
@@ -73,10 +74,10 @@ export default function LoginScreen() {
       <Text style={tw`text-center text-5xl font-bold text-gray-900`}>FindEasy</Text>
       <Text style={tw`text-center text-base text-gray-700`}>Sign in to your account</Text>
       <Text style={{ fontSize: 24 }}>{i18n.t('welcome')}</Text>
-      <Text style={{ marginVertical: 10 }}>{i18n.t('greeting')}</Text>
+      {/* <Text style={{ marginVertical: 10 }}>{i18n.t('greeting')}</Text>
 
       <Button title="English" onPress={() => switchLanguage('en')} />
-      <Button title="Español" onPress={() => switchLanguage('es')} />
+      <Button title="Español" onPress={() => switchLanguage('es')} /> */}
 
       <View style={tw.style(`bg-white rounded-3xl px-8 py-8 w-[90%] mt-4`)} >
         <View>
